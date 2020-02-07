@@ -43,6 +43,9 @@ header, section, footer{
 	text-align: center;
 	height: 300px;
 }
+h3, h5{
+	text-align: center;
+}
 
 /**********************Cards**********************/
 .card-footer{
@@ -56,4 +59,8 @@ header, section, footer{
 #info{
 	padding-left: 1.5em;
 	padding-right: 1.5em;
+}
+.row{
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
 }
