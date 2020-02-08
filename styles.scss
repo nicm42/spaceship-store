@@ -1,0 +1,72 @@
+/**********************Variables**********************/
+$breakpoint: 576px;
+
+/**********************General**********************/
+body{
+	font-family: 'Chakra Petch', sans-serif;
+	font-size: 1em;
+	background-image: url(images/background.jpg);
+	background-color: black;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 1em 1.5em 1em 1.5em;
+	position: relative;
+	margin-top: 40px;
+	@media screen and (max-width: $breakpoint){
+		padding: 1em 1em 1em 1em;
+	}
+}
+header, section, footer{
+	background-color: rgba(255, 255, 255, 0.25);
+	padding: 0.75em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+header{
+	hyphens: auto; /* The word 'Spaceship' is too long for mobiles, so break it with a hyphen in a relevant place */	
+}
+
+/**********************Jumbotron**********************/
+.jumbotron{
+	background-image: url(images/header.jpg);
+	background-color: black;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	margin-bottom: 0;
+}
+
+/**********************Carousel**********************/
+.carousel-item, .carousel-item img{
+	text-align: center;
+	height: 300px;
+}
+h3, h5{
+	text-align: center;
+}
+.carousel-image{
+	opacity: 0.5;
+}
+
+/**********************Cards**********************/
+.card-footer{
+	text-align: center
+}
+.badge{
+	padding: 0.5em;
+}
+
+/**********************Footer**********************/
+#info{
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+}
+.row{
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+.col:not(:last-child){
+	@media screen and (max-width: $breakpoint){
+		padding-bottom: 2rem;
+	}	
+}
