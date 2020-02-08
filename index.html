@@ -10,7 +10,7 @@
 </head>
 <body data-spy="scroll" data-target="#nav" data-offset="0">
 	<nav id="nav" class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-	  <a class="navbar-brand" href="#">Logo</a>
+	  <img class="navbar-brand" src="images/logo.png" alt="Rocket logo">
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
@@ -26,7 +26,8 @@
 	<header id="home" class="rounded">
 		<div class="jumbotron bg-dark text-white">
 		  <h1 class="display-4">The Spaceship Store</h1>
-		  <p class="lead">Sub-header goes here</p>
+		  <p class="lead">We sell spaceships</p>
+		  <p>We have a variety of spaceships from ship-to-surface vessels, in system ships and interstellar craft.</p>
 		</div>
 	</header>
 	<main>
@@ -39,21 +40,21 @@
 			  </ol>
 			  <div class="carousel-inner">
 			    <div class="carousel-item active">
-			    	<img src="images/carousel.jpg" class="d-block w-100" alt="Sale">
+			    	<img src="images/sale.jpg" class="d-block w-100 carousel-image" alt="Sale">
 			    	<div class="carousel-caption">
 			      <h5>Sale! Up to 20% off</h5>
 			      <a href="#" class="badge badge-info">View the sale items</a>
 			  </div>
 			    </div>
 			    <div class="carousel-item">
-			    	<img src="images/carousel.jpg" class="d-block w-100" alt="Sale">
+			    	<img src="images/spaceship.jpg" class="d-block w-100 carousel-image" alt="Sale">
 			    	<div class="carousel-caption">
-			      <h5>New spaceships added</h5>
+			      <h5>New spaceships added January 2020</h5>
 			      <a href="#" class="badge badge-info">View the new ships</a>
 			  </div>
 			    </div>
 			    <div class="carousel-item">
-			    	<img src="images/carousel.jpg" class="d-block w-100" alt="Sale">
+			    	<img src="images/subscribe.jpg" class="d-block w-100 carousel-image" alt="Sale">
 			    	<div class="carousel-caption">
 			      <h5>Sign up to our mailing list for subscriber offers</h5>
 			      <a href="#" class="badge badge-info">Mailing list</a>
@@ -70,14 +71,14 @@
 			  </a>
 			</div>
 		</section>
-		<section id="best-sellers" class="rounded">
+		<section id="best-sellers" class="rounded text-white">
 			<h3>Best-sellers</h3>
 			<div class="card-deck">
 			  <div class="card rounded text-white bg-dark">
 			  	<h5 class="card-header">Enterprise</h5>
 			    <img src="images/enterprise.jpg" class="card-img-top" alt="Enterprise">
 			    <div class="card-body">
-			      <p class="card-text">The original, no A, B, C or D</p>
+			      <p class="card-text">A Constitution class starship, this is the original: no A, B, C or D. This ship is known for being able to survive improbable circumstances. Therefore no insurance is offered should you have any accidents.</p>
 			    </div>
 			    <div class="card-footer">
 			      <small class="badge badge-info">Read more</small>
@@ -87,7 +88,7 @@
 			  	<h5 class="card-header">Millennium Falcon</h5>
 			    <img src="images/falcon.jpg" class="card-img-top" alt="Millennium Falcon">
 			    <div class="card-body">
-			      <p class="card-text">Can make the Kessel Run in less than twelve parsecs</p>
+			      <p class="card-text">A light freighter. Includes a hyperdrive, allowing it to make the Kessel Run in less than twelve parsecs. Popular with smugglers, due to sensor-proof compartments.</p>
 			    </div>
 			    <div class="card-footer">
 			      <small class="badge badge-info">Read more</small>
@@ -97,7 +98,7 @@
 			  	<h5 class="card-header">Protector</h5>
 			    <img src="images/protector.jpg" class="card-img-top" alt="Protector">
 			    <div class="card-body">
-			      <p class="card-text">The only ship to come with the Omega-13 device</p>
+			      <p class="card-text">Equipped with a quantum flux drive. Includes many offensive weapons including the popular blue particle canons. This is the only ship to come with the Omega-13 device</p>
 			    </div>
 			    <div class="card-footer">
 			      <small class="badge badge-info">Read more</small>
@@ -107,7 +108,7 @@
 			  	<h5 class="card-header">Starbug</h5>
 			    <img src="images/starbug.jpg" class="card-img-top" alt="Starbug">
 			    <div class="card-body">
-			      <p class="card-text">Ship-to-surface transport vehicle</p>
+			      <p class="card-text">Ship-to-surface transport vehicle. However, can also support four people for extended periods of time. Runs on hydrogren-powered thrusters. Newly fitted with laser cannons.</p>
 			    </div>
 			    <div class="card-footer">
 			      <small class="badge badge-info">Read more</small>
@@ -117,7 +118,7 @@
 			  	<h5 class="card-header">TARDIS</h5>
 			    <img src="images/tardis.jpg" class="card-img-top" alt="TARDIS">
 			    <div class="card-body">
-			      <p class="card-text">Travels in space and time</p>
+			      <p class="card-text">Time And Relative Dimension In Space. This ship travels in space and time. However, it can be temperamental if not operated correctly. You are advised to read the manul carefully.</p>
 			    </div>
 			    <div class="card-footer">
 			      <small class="badge badge-info">Read more</small>
@@ -127,32 +128,34 @@
 		</section>
 	</main>
 	<footer id="info" class="rounded">
-		<div class="row rounded bg-dark text-white">
-			<div class="col-sm">
-				<h4>Details</h4>
-				<div id="about"><a href="#" class="badge badge-info">About</a></div>
-				<div id="faq"><a href="#" class="badge badge-info">FAQ</a></div>
+		<div class="row justify-content-between rounded bg-dark text-white">
+			<div class="col col-sm-4">
+				<h4>Information</h4>
+				<ul><li>New ships come in all the time</li>
+					<li>Both new and used ships available</li>
+					<li>Contact us for up-to-date availability and prices of second-hand ships</li>
+					<li>Speak to us about exchanges on used ships</li></ul>
+					<a href="#" class="text-info small">contact@spaceshipstore.com</a>
 			</div>
-			<div class="col-sm">
+			<div class="col col-sm-auto">
 				<h4>Catalogue</h4>
 				<form>
 			  <div class="form-group">
 			    <label for="exampleInputEmail1">Enter your email address to receive our full catalogue</label>
 			    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
 			  </div>
-			  <button type="submit" class="btn btn-primary">Submit</button>
+			  <button type="submit" class="btn btn-info">Submit</button>
 			</form>
 			</div>
-			<div class="col-sm">
+			<div class="col col-sm-auto">
 				<h4>Location</h4>
-				<div id="map">Map</div>
-				<div id="address">Address</div>
+				<div id="address">42 Andromeda Way<br>London<br>EC1 1MW</div>
+				<div id="map"><img src="images/map.png" alt="Map"></div>
 			</div>
 		</div>
 	</footer>
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>

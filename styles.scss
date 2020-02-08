@@ -1,17 +1,20 @@
 /**********************Variables**********************/
-
+$breakpoint: 576px;
 
 /**********************General**********************/
 body{
 	font-family: 'Chakra Petch', sans-serif;
 	font-size: 1em;
-	background-image: url(images/nebula.jpg);
+	background-image: url(images/background.jpg);
 	background-color: black;
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding: 1em 1.5em 1em 1.5em;
 	position: relative;
 	margin-top: 40px;
+	@media screen and (max-width: $breakpoint){
+		padding: 1em 1em 1em 1em;
+	}
 }
 header, section, footer{
 	background-color: rgba(255, 255, 255, 0.25);
@@ -19,13 +22,13 @@ header, section, footer{
 	margin-top: 1em;
 	margin-bottom: 1em;
 }
-.bg-dark{
-	background-color: rgba(52,58,64,0.75) !important;
+header{
+	hyphens: auto; /* The word 'Spaceship' is too long for mobiles, so break it with a hyphen in a relevant place */	
 }
 
 /**********************Jumbotron**********************/
 .jumbotron{
-	background-image: url(images/carousel.jpg);
+	background-image: url(images/header.jpg);
 	background-color: black;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -40,6 +43,9 @@ header, section, footer{
 }
 h3, h5{
 	text-align: center;
+}
+.carousel-image{
+	opacity: 0.5;
 }
 
 /**********************Cards**********************/
@@ -58,4 +64,9 @@ h3, h5{
 .row{
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
+}
+.col:not(:last-child){
+	@media screen and (max-width: $breakpoint){
+		padding-bottom: 2rem;
+	}	
 }
