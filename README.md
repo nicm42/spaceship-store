@@ -5,6 +5,7 @@
 * [General info](#general-info)
 * [Screenshots](#screenshots)
 * [Technologies](#technologies)
+* [Learnings](#learnings)
 * [Setup](#setup)
 * [Status](#status)
 * [Inspiration](#inspiration)
@@ -19,6 +20,11 @@ I wanted to try using Bootstrap and thought the idea of a shop selling spaceship
 ## Technologies
 * HTML
 * Bootstrap 4
+
+## Learnings
+* How to use Bootstrap
+* Bootstrap in dark mode
+* Bootstrap carousel
 
 ## Setup
 To view this project visit the [demo](https://spaceshipstore.netlify.com/) or download the files and open index.html
